@@ -1,1 +1,45 @@
-Hello World!
+---
+---
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mind the Tide band</title>
+    <meta name="author" content="Mind the Tide" />
+    <meta name="description" content="Mind the Tide band" />
+    <link
+      rel="canonical"
+      href="{{ site.url }}{{ page.url | replace:'index.html','' }}"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="{{ site.url }}/assets/css/normalize.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ site.url }}/assets/css/skeleton.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="six columns">1</div>
+          <div class="six columns">2</div>
+        </div>
+      </div>
+    </main>
+    {% include analytics.html %}
+  </body>
+</html>
