@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.hero-container {
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+  img {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.hero-img {
+  filter: brightness(40%);
+  width: 100vw;
+  height: 90vh;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40%;
+  height: 40%;
+  z-index: 2;
+}

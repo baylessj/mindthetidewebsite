@@ -29,7 +29,8 @@ url: "https://mindthetide.com" # the base hostname & protocol for your site, e.g
 twitter_username: mindthetideband
 github_username: baylessj
 sass:
-  sass_dir: _includes/_sass
+  sass_dir: _scss
+  style: :compressed
 
 # Build settings
 theme:

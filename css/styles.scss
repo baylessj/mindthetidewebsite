@@ -1,9 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
 
-html,
-body {
-  height: 100%;
-}
+// Imports
+@import "base";
