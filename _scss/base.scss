@@ -8,6 +8,11 @@ body {
   height: 100%;
 }
 
+section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
 .hero-container {
   width: 100vw;
   height: 90vh;
@@ -51,10 +56,6 @@ body {
   gap: 2rem;
 }
 
-#demos {
-  padding-top: 4rem;
-}
-
 .centered-flex {
   display: flex;
   align-items: center;
@@ -63,4 +64,11 @@ body {
 .demos-text {
   text-align: center;
   flex: 1;
+}
+
+#point-down {
+  padding-top: 2rem;
+  width: 100vw;
+  text-align: center;
+  font-weight: 800;
 }
