@@ -6,12 +6,24 @@
 html,
 body {
   height: 100%;
+  background-color: #eee;
 }
 
 section {
   padding-top: 2rem;
   padding-bottom: 4rem;
   text-align: center;
+}
+
+a {
+  // color: #7ec9a6;
+  color: #6bab8d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+hr {
+  border-top: 1px solid #ccc;
 }
 
 .hero-container {
@@ -49,12 +61,19 @@ section {
   height: 6.5rem;
   color: white;
   z-index: 3;
+  padding: 2rem;
 
   display: flex;
   flex-direction: row;
   justify-content: right;
   align-items: center;
   gap: 2rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
 }
 
 .centered-flex {
@@ -72,6 +91,11 @@ section {
   width: 100vw;
   text-align: center;
   font-weight: 800;
+}
+
+.upcoming-shows {
+  background-color: #fff;
+  padding: 2rem 4rem;
 }
 
 .shows-table {

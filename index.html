@@ -44,10 +44,20 @@
   <body>
     <div class="container">
       <nav class="navbar">
-        <div>Test 1</div>
-        <div>Test 2</div>
-        <div><i class="fa-brands fa-soundcloud"></i></div>
-        <div><i class="fa-brands fa-youtube"></i></div>
+        <div><a href="#demos">Demos</a></div>
+        <div><a href="#upcoming-shows">Upcoming Shows</a></div>
+        <div><a href="#contact">Contact</a></div>
+        <div>|</div>
+        <div>
+          <a href="https://soundcloud.com/mind-the-tide-band"
+            ><i class="fa-brands fa-soundcloud"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/channel/UCvAknJUuaXEVEzUqoZQwrxg"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
       </nav>
     </div>
     <main>
@@ -78,6 +88,7 @@
         </div>
       </div>
     </section>
+    <div class="container"><hr /></div>
     <section id="demos">
       <div class="container">
         <div class="row centered-flex">
@@ -89,8 +100,9 @@
       </div>
     </section>
     <section id="upcoming-shows">
-      <div class="container">
+      <div class="container upcoming-shows">
         <h1>Upcoming Shows</h1>
+        {% if site.data.shows %}
         <table class="u-full-width shows-table">
           <thead>
             <tr>
@@ -100,24 +112,21 @@
             </tr>
           </thead>
           <tbody>
-            {% if site.data.shows %} {% for show in site.data.shows %}
+            {% for show in site.data.shows %}
             <tr>
               <td>{{ show.date }}</td>
               <td>{{ show.venue }}</td>
               <td>{{ show.location }}</td>
             </tr>
-            {% endfor %} {% else %}
-            <tr>
-              <td></td>
-              <td>
-                No shows booked currently, <a href="#contact">let us know</a> if
-                there's somewhere we should play!
-              </td>
-              <td></td>
-            </tr>
-            {% endif %}
+            {% endfor %}
           </tbody>
         </table>
+        {% else %}
+        <p>
+          No shows booked currently, <a href="#contact">let us know</a> if
+          there's somewhere we should play!
+        </p>
+        {% endif %}
       </div>
     </section>
     <section id="contact">
@@ -144,15 +153,17 @@
             </div>
           </div>
           <div class="six columns">
-            <div class="riders-title"><h1>Riders</h1></div>
+            <div class="riders-title"><h1>Info</h1></div>
             <div class="riders">
               <div><a href="">Set List</a></div>
               <div><a href="">Tech Rider</a></div>
+              <div><a href="">Logos + Images</a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="container"><hr /></div>
     <section id="footer">© 2022 by Mind the Tide</section>
     <div>{% include analytics.html %}</div>
   </body>
