@@ -10,9 +10,23 @@ body {
 }
 
 section {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
   text-align: center;
+}
+
+.row {
+  div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .row {
+    div {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+  }
 }
 
 a {
@@ -53,6 +67,20 @@ hr {
   z-index: 2;
 }
 
+@media (max-width: 400px) {
+  .logo {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: auto;
+    height: 40vh;
+  }
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -76,9 +104,25 @@ hr {
   }
 }
 
+@media (max-width: 400px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .centered-flex {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.double-wide {
+  flex-grow: 2;
+}
+
+.max-phablet {
+  max-width: 550px;
 }
 
 .demos-text {
@@ -138,4 +182,11 @@ hr {
 
 #footer {
   text-align: center;
+  padding-bottom: 4rem;
 }
+
+// @media (max-width: 550px) {
+//   .columns {
+
+//   }
+// }
