@@ -75,11 +75,6 @@ section {
 
 #contact {
   text-align: center;
-  padding-bottom: 8rem;
-}
-
-.contact-header {
-  padding-bottom: 2rem;
 }
 
 .contact-links {
@@ -93,4 +88,25 @@ section {
     padding-right: 2rem;
     font-size: 4rem;
   }
+}
+
+.riders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+
+  div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.contact-title,
+.riders-title {
+  padding-bottom: 2rem;
+}
+
+#footer {
+  text-align: center;
 }
