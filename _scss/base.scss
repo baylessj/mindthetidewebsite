@@ -11,6 +11,7 @@ body {
 section {
   padding-top: 2rem;
   padding-bottom: 4rem;
+  text-align: center;
 }
 
 .hero-container {
@@ -71,6 +72,10 @@ section {
   width: 100vw;
   text-align: center;
   font-weight: 800;
+}
+
+.shows-table {
+  table-layout: fixed;
 }
 
 #contact {

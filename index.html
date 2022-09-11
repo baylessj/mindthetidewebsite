@@ -88,6 +88,38 @@
         </div>
       </div>
     </section>
+    <section id="upcoming-shows">
+      <div class="container">
+        <h1>Upcoming Shows</h1>
+        <table class="u-full-width shows-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if site.data.shows %} {% for show in site.data.shows %}
+            <tr>
+              <td>{{ show.date }}</td>
+              <td>{{ show.venue }}</td>
+              <td>{{ show.location }}</td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr>
+              <td></td>
+              <td>
+                No shows booked currently, <a href="#contact">let us know</a> if
+                there's somewhere we should play!
+              </td>
+              <td></td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </section>
     <section id="contact">
       <div class="container">
         <div class="row">
