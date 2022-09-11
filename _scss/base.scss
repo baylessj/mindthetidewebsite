@@ -50,3 +50,17 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
+#demos {
+  padding-top: 4rem;
+}
+
+.centered-flex {
+  display: flex;
+  align-items: center;
+}
+
+.demos-text {
+  text-align: center;
+  flex: 1;
+}
