@@ -65,112 +65,114 @@
         <img class="hero-img" src="/assets/img/hero_bg.webp" />
         <img class="logo" src="/assets/img/logo_no_bg.png" />
       </div>
+      <section id="bio">
+        <div class="container">
+          <div class="row centered-flex">
+            <div class="double-wide max-phablet">
+              <h1>MIND THE TIDE</h1>
+              is a Midwest Emo band from Indianapolis, Indiana formed in 2022.
+              Our sound comes from a wide range of influences, combining
+              elements of math rock, pop punk, hardcore, and megachurch ambient
+              guitar.
+            </div>
+            <div class="">
+              <h2>Members</h2>
+              <ul>
+                <li>Jonathan Bayless - Guitar, Vocals</li>
+                <li>Navarone Hartman - Guitar, Vocals</li>
+                <li>Quinten Whalen - Bass</li>
+                <li>Ram Dent - Drums</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container"><hr /></div>
+      <section id="demos">
+        <div class="container">
+          <div class="row centered-flex">
+            <div class="four columns demos-text">
+              <h3>Demos</h3>
+            </div>
+            <div class="eight columns">{% include soundcloud.html %}</div>
+          </div>
+        </div>
+      </section>
+      <div class="container"><hr /></div>
+      <section id="upcoming-shows">
+        <div class="container upcoming-shows">
+          <h1>Upcoming Shows</h1>
+          {% if site.data.shows %}
+          <table class="u-full-width shows-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for show in site.data.shows %}
+              <tr>
+                <td>{{ show.date }}</td>
+                <td>{{ show.venue }}</td>
+                <td>{{ show.location }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% else %}
+          <p>
+            No shows booked currently,
+            <a href="mailto:mindthetideband@gmail.com">let us know</a> if
+            there's somewhere we should play!
+          </p>
+          {% endif %}
+        </div>
+      </section>
+      <div class="container"><hr /></div>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="six columns">
+              <div class="riders-title"><h1>Info</h1></div>
+              <div class="riders">
+                <div><a href="">Set List</a></div>
+                <div><a href="">Tech Rider</a></div>
+                <div>
+                  <a
+                    href="https://drive.google.com/drive/folders/1W4Jcaa7HCPUfGXwIcfiJUANly9GdARxP?usp=sharing"
+                    >Logos + Images</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="six columns">
+              <div class="contact-title"><h1>Contact</h1></div>
+              <div class="contact-links">
+                <div>
+                  <a href="mailto:mindthetideband@gmail.com"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </div>
+                <div>
+                  <a href="https://twitter.com/mindthetideband">
+                    <i class="fa-brands fa-twitter"></i
+                  ></a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/mindthetideband/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container"><hr /></div>
+      <section id="footer">© 2022 by Mind the Tide</section>
     </main>
-    <section id="point-down"><h1>⌄</h1></section>
-    <section id="bio">
-      <div class="container">
-        <div class="row centered-flex">
-          <div class="double-wide max-phablet">
-            <h1>MIND THE TIDE</h1>
-            is a Midwest Emo band from Indianapolis, Indiana formed in 2022. Our
-            sound comes from a wide range of influences, combining elements of
-            math rock, pop punk, hardcore, and megachurch P&W guitar.
-          </div>
-          <div class="">
-            <h2>Members</h2>
-            <ul>
-              <li>Jonathan Bayless - Guitar, Vocals</li>
-              <li>Navarone Hartman - Guitar, Vocals</li>
-              <li>Quinten Whalen - Bass</li>
-              <li>Ram Dent - Drums</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="container"><hr /></div>
-    <section id="demos">
-      <div class="container">
-        <div class="row centered-flex">
-          <div class="four columns demos-text">
-            <h3>Demos</h3>
-          </div>
-          <div class="eight columns">{% include soundcloud.html %}</div>
-        </div>
-      </div>
-    </section>
-    <section id="upcoming-shows">
-      <div class="container upcoming-shows">
-        <h1>Upcoming Shows</h1>
-        {% if site.data.shows %}
-        <table class="u-full-width shows-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Venue</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for show in site.data.shows %}
-            <tr>
-              <td>{{ show.date }}</td>
-              <td>{{ show.venue }}</td>
-              <td>{{ show.location }}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-        {% else %}
-        <p>
-          No shows booked currently,
-          <a href="mailto:mindthetideband@gmail.com">let us know</a> if there's
-          somewhere we should play!
-        </p>
-        {% endif %}
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="six columns">
-            <div class="contact-title"><h1>Contact</h1></div>
-            <div class="contact-links">
-              <div>
-                <a href="mailto:mindthetideband@gmail.com"
-                  ><i class="fa-regular fa-envelope"></i
-                ></a>
-              </div>
-              <div>
-                <a href="https://twitter.com/mindthetideband">
-                  <i class="fa-brands fa-twitter"></i
-                ></a>
-              </div>
-              <div>
-                <a href="https://www.instagram.com/mindthetideband/"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="six columns">
-            <div class="riders-title"><h1>Info</h1></div>
-            <div class="riders">
-              <div><a href="">Set List</a></div>
-              <div><a href="">Tech Rider</a></div>
-              <div>
-                <a
-                  href="https://drive.google.com/drive/folders/1W4Jcaa7HCPUfGXwIcfiJUANly9GdARxP?usp=sharing"
-                  >Logos + Images</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="container"><hr /></div>
-    <section id="footer">© 2022 by Mind the Tide</section>
     <div>{% include analytics.html %}</div>
   </body>
 </html>

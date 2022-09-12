@@ -42,7 +42,7 @@ hr {
 
 .hero-container {
   width: 100vw;
-  height: 90vh;
+  height: 50vh;
   text-align: center;
   img {
     object-fit: cover;
@@ -53,13 +53,13 @@ hr {
 .hero-img {
   filter: brightness(40%);
   width: 100vw;
-  height: 90vh;
+  height: 50vh;
   z-index: 1;
 }
 
 .logo {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
   width: 40%;
@@ -74,7 +74,13 @@ hr {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
+  .logo {
+    top: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
   .logo {
     width: auto;
     height: 40vh;
@@ -104,7 +110,7 @@ hr {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .navbar {
     display: none;
   }
@@ -115,6 +121,9 @@ hr {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  div {
+    padding-top: 4rem;
+  }
 }
 
 .double-wide {
@@ -130,15 +139,7 @@ hr {
   flex: 1;
 }
 
-#point-down {
-  padding-top: 2rem;
-  width: 100vw;
-  text-align: center;
-  font-weight: 800;
-}
-
 .upcoming-shows {
-  background-color: #fff;
   padding: 2rem 4rem;
 }
 
@@ -175,8 +176,7 @@ hr {
   }
 }
 
-.contact-title,
-.riders-title {
+.contact-title {
   padding-bottom: 2rem;
 }
 
@@ -184,9 +184,3 @@ hr {
   text-align: center;
   padding-bottom: 4rem;
 }
-
-// @media (max-width: 550px) {
-//   .columns {
-
-//   }
-// }
