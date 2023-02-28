@@ -1,6 +1,15 @@
 # - date: 09/12/2022
 #   venue: Hoosier Dome
 #   location: Indianapolis, IN
-- date: 02/24/2023
-  venue: The Melody Inn
+- date: 03/10/2023
+  venue: The Hoosier Dome
+  location: Indianapolis, IN
+- date: 05/26/2023
+  venue: The Ruin
+  location: Fort Wayne, IN
+- date: 06/17/2023
+  venue: Doll House
+  location: Fort Wayne, IN
+- date: 06/23/2023
+  venue: Healer
   location: Indianapolis, IN
