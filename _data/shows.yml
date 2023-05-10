@@ -1,11 +1,14 @@
 # - date: 09/12/2022
 #   venue: Hoosier Dome
 #   location: Indianapolis, IN
-- date: 04/18/2023
-  venue: Natural State Provisions
-  location: Indianapolis, IN
 - date: 05/10/2023
   venue: Melody Inn
+  location: Indianapolis, IN
+- date: 05/11/23
+  venue: Atomic Bowl
+  location: Indianapolis, IN
+- date: 05/21/23
+  venue: Hoosier Dome
   location: Indianapolis, IN
 - date: 05/26/2023
   venue: The Ruin
@@ -16,3 +19,6 @@
 - date: 06/23/2023
   venue: Healer
   location: Indianapolis, IN
+- date: 06/26/23
+  venue: Dirty Dungarees
+  location: Columbus, OH
